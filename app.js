@@ -1,17 +1,7 @@
 const express=require("express");
-
-
 const bodyParser=require("body-parser");
-
-
 const request=require("request");
-
-
-
 const https=require("https");
-
-
-
 
 
 
@@ -21,18 +11,9 @@ app.use(bodyParser.urlencoded({extended:true}));  //for using body-parser
 
 
 
-
-
-
-
-
 app.get("/",function(req,res){
   res.sendFile(__dirname+"/signup.html");
 })
-
-
-
-
 
 
 
@@ -82,17 +63,9 @@ app.post("/", function(req,res){
 
 
 
-
-
-
-
 app.post("/failure",function(req,res){
   res.redirect("/");
 })
-
-
-
-
 
 
 
